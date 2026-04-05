@@ -1,0 +1,16 @@
+name: neom_cron
+description: >-
+  Process execution and cron scheduling for Open Neom agents.
+  Run, pool, pipe processes and schedule recurring tasks
+  with standard cron expressions.
+version: 1.0.0
+homepage: https://github.com/Open-Neom/neom_cron
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies: {}
+
+dev_dependencies:
+  test: ^1.25.0
