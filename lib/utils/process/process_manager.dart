@@ -502,8 +502,8 @@ class Shell {
   /// Basic safety check for a command string.
   static bool isCommandSafe(String command) {
     final dangerous = [
-      RegExp(r'\brm\s+(-[a-zA-Z]*f[a-zA-Z]*\s+)?/\s'),
-      RegExp(r'\brm\s+-[a-zA-Z]*r[a-zA-Z]*f?[a-zA-Z]*\s+/\b'),
+      RegExp(r'\brm\s+(-[a-zA-Z]*f[a-zA-Z]*\s+)?/(\s|$)'),
+      RegExp(r'\brm\s+-[a-zA-Z]*r[a-zA-Z]*f?[a-zA-Z]*\s+/(\s|$)'),
       RegExp(r'\bmkfs\b'),
       RegExp(r'\bdd\s+.*of=/dev/'),
       RegExp(r'>\s*/dev/[sh]d[a-z]'),
